@@ -1,0 +1,97 @@
+.big_picture {
+
+	.block {
+
+		//small
+		@media (max-width: (@HeroBlockSize * 2 - 1) ) {
+			
+			&.block_big {
+				height: auto;
+				
+				.item {
+					height: auto;
+
+					.description {
+						font-size: 3em;
+					}
+				}
+			}
+
+			.item {
+				.description {
+					opacity: 1;
+				}
+			}
+
+		}
+
+		//medium
+		@media (max-width: (@HeroBlockSize * 3 - 1) ) and (min-width: (@HeroBlockSize * 2) ) {
+			
+		}
+
+		//wide and very wide
+		@media (min-width: (@HeroBlockSize * 3) ) {
+
+			flex-grow: 0;
+			width: @HeroBlockSize;
+			height: @HeroBlockSize;
+
+			.item {
+				width: (@HeroBlockSize / 2) - (@HeroMarginSize * 2);
+				height: (@HeroBlockSize / 2) - (@HeroMarginSize * 2);
+				flex-grow: 0;
+
+				&.big {
+					width: @HeroBlockSize - (@HeroMarginSize * 2);
+					height: @HeroBlockSize - (@HeroMarginSize * 2);
+				}
+			}
+		}
+
+		//wide
+		@media (max-width: (@HeroBlockSize * 4 - 1)) and (min-width: (@HeroBlockSize * 3)) {
+			&.block3,
+			&.block4 {
+				height: @HeroBlockSize / 2;
+				width: @HeroBlockSize * 2;
+			}
+		}
+
+	}
+
+}
+
+//touch devices
+.istouch {
+	.big_picture {
+		
+		.block {
+		
+			.item {
+				opacity: 1;
+				filter: grayscale(0);
+
+				.description {
+					opacity: 1;
+				}
+
+				.open {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+//small
+@media (max-width: (@HeroBlockSize * 2 - 1) ) {
+	
+	.bigpicture_details_wrapper {
+		left: 5px;
+		right: 5px;
+		bottom: 5px;
+		top: @top-menu-height + 5px;
+	}
+
+}

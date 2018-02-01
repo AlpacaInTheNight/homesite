@@ -1,0 +1,94 @@
+/* -GLOBAL STYLES- */
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	.defaultHeaderStyle();
+}
+
+.title {
+	.defaultHeaderStyle();
+}
+
+h1 {font-size: 2.0em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.2em;}
+h4 {font-size: 1.0em;}
+h5 {font-size: 0.8em;}
+h6 {font-size: 0.5em;}
+
+a {
+	text-decoration: none;
+	color: @color-link;
+	
+	&:hover {
+		text-decoration: underline;
+		color: @color-link + #222;
+	}
+	
+	&:visited {
+		
+	}
+}
+
+
+hr {
+	height: 0px;
+	color: @color-hr;
+	background: @color-hr;
+	text-align: center;
+	margin: 10px auto;
+	border-style: solid none;
+	border-width: 1px;
+	border-top-color: @color-hr;
+	border-bottom-color: @color-hr-bottom;
+}
+
+ul {
+	margin-left: 10px;
+}
+
+ol {
+	margin-left: 10px;
+}
+
+li {}
+
+#wrapper button, #wrapper input[type='button'], #wrapper input[type='submit'], #wrapper input[type='reset'] {}
+
+#wrapper {
+	input[type='text'] {}
+	input[type='password'] {}
+	input[type='checkbox'] {}
+	input[type='file'] {}
+	input[type='image'] {}
+	input[type='radio'] {}
+	input[type='hidden'] {}
+	textarea {}
+	select {}
+	options {}
+}
+/* -GLOBAL STYLES END- */
+
+
+/* -BODY- */
+body {
+	min-width: @size-page-min;
+	font-size: 10px;
+	color: @color-text-main;
+	background-color: @color-back;
+
+	.defaultTextStyle();
+}
+/* -BODY END- */
+
+
+/* -WRAPPER- */
+#wrapper {
+	width: 100%;
+	position: relative;
+	background-color: @color-wrapper;
+	margin: 0 auto;
+	padding: 0px;
+	min-height: 100%;
+}
+
+/* -WRAPPER END- */
