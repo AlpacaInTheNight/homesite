@@ -1,6 +1,5 @@
-import { CatalogList } from '../interface/Application';
 
-let Catalog: CatalogList = {
+let Catalog: Elerium.BigPicture.catalogList = {
 
 	bigBlock: {
 		name: "This is my homepage. Few words about me:",

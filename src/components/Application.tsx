@@ -5,14 +5,13 @@ import { LangSwitcher } from '../components/LangSwitcher';
 import { Scroller } from '../components/Scroller';
 import homepage from '../catalog/homepage';
 import { Switch, Route, Link } from 'react-router-dom';
-import { AvailableLanguages } from '../interface/Application';
 
 interface ApplicationProps {
 	
 }
 
 interface ApplicationState {
-	language: AvailableLanguages;
+	language: Elerium.availableLanguages;
 	renderedBigPicture: boolean;
 	contentContainer?: string;
 }
@@ -23,7 +22,7 @@ export class Application extends React.Component<ApplicationProps, ApplicationSt
 
 	public constructor(props: ApplicationProps) {
 		super();
-		let lang: AvailableLanguages = localStorage[this.USER_LANGUAGE] ? localStorage[this.USER_LANGUAGE] : "eng";
+		let lang: Elerium.availableLanguages = localStorage[this.USER_LANGUAGE] ? localStorage[this.USER_LANGUAGE] : "eng";
 
 
 		let state: ApplicationState = {
@@ -34,7 +33,7 @@ export class Application extends React.Component<ApplicationProps, ApplicationSt
 		this.state = state;
 	}
 
-	private updateSelectedLanguage = (lang: AvailableLanguages) => {
+	private updateSelectedLanguage = (lang: Elerium.availableLanguages) => {
 		if(!lang) return;
 
 		this.setState({language: lang});

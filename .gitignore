@@ -58,3 +58,4 @@ typings/
 .env
 
 /dist/img/*.jpg
+/dist/bundle.js

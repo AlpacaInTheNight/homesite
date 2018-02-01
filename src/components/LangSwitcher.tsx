@@ -1,8 +1,7 @@
 import * as React from 'react';
-import { AvailableLanguages } from '../interface/Application';
 
 interface LangSwitcherProps {
-	activeLanguage: AvailableLanguages;
+	activeLanguage: Elerium.availableLanguages;
 	changeLanguage: Function;
 }
 

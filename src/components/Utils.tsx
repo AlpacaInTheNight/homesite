@@ -19,7 +19,7 @@ export function compareBasic(obj1: any, obj2: any) {
 	}
 
 	/**
-	 * Thats for arrays, but let it be here.
+	 * That's for arrays, but let it be here.
 	 */
 	if( (obj1 && obj2) && obj1.length != obj2.length) {
 		return false;

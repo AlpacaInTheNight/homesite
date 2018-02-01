@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { AvailableLanguages } from '../interface/Application';
 import Catalog from '../catalog/Catalog';
 import { Link } from 'react-router-dom';
 
 interface ShowDetailsProps {
-	language: AvailableLanguages;
+	language: Elerium.availableLanguages;
 	target: string;
 	setContainer: Function;
 }
@@ -23,8 +22,8 @@ export class ShowDetails extends React.Component<ShowDetailsProps, ShowDetailsSt
 
 	private documentTitle: string;
 
-	private ENGLISH: AvailableLanguages = "eng";
-	private RUSSIAN: AvailableLanguages = "rus";
+	private ENGLISH: Elerium.availableLanguages = "eng";
+	private RUSSIAN: Elerium.availableLanguages = "rus";
 
 	public constructor(props: ShowDetailsProps) {
 		super();

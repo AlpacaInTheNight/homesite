@@ -1,12 +1,11 @@
 import * as React from 'react';
-import { AvailableLanguages, BigPictureBlock, BigPictureItem } from '../interface/Application';
 import { ShowDetails } from './ShowDetails';
 import { Link } from 'react-router-dom';
 import { compareBasic } from './Utils';
 
 interface BigPictureProps {
-	source: BigPictureBlock[];
-	language: AvailableLanguages;
+	source: Elerium.BigPicture.block[];
+	language: Elerium.availableLanguages;
 	showDetails?: string;
 	setContainer: Function;
 }
@@ -29,11 +28,11 @@ export class BigPicture extends React.Component<BigPictureProps, BigPictureState
 		console.log("Creating instance of BigPicture");
 	}
 
-	public renderSource(source: BigPictureBlock[]): JSX.Element[] {
-		let output: JSX.Element[]		= [];
-		let blockKey: number			= 0;
-		let itemKey: number				= 0;
-		let lang: AvailableLanguages	= this.props.language;
+	public renderSource(source: Elerium.BigPicture.block[]): JSX.Element[] {
+		let output: JSX.Element[]				= [];
+		let blockKey: number					= 0;
+		let itemKey: number						= 0;
+		let lang: Elerium.availableLanguages	= this.props.language;
 
 		//big block dom class
 		const BLOCK_BIG = "block_big";
@@ -60,11 +59,11 @@ export class BigPicture extends React.Component<BigPictureProps, BigPictureState
 
 		const READ_MORE_RUS = "Читать дальше";
 
-		source.forEach((elem: BigPictureItem[]) => {
+		source.forEach((elem: Elerium.BigPicture.item[]) => {
 			let children: JSX.Element[] = [];
 			let bigClass = elem.length == 1 ? BLOCK_BIG : EMPTY;
 
-			elem.forEach( (elem: BigPictureItem) => {
+			elem.forEach( (elem: Elerium.BigPicture.item) => {
 				let addClass = elem.isBig ? ITEM_BIG : EMPTY;
 				let style = elem.image ? {backgroundImage: `url("img/${elem.image}")`} : {};
 				let name = elem.name;

@@ -1,8 +1,6 @@
-import { BigPictureBlock } from '../interface/Application';
 import Catalog from './Catalog';
 
-
-let homepage: BigPictureBlock[] = [
+let homepage: Elerium.BigPicture.block[] = [
 
 	[
 		Catalog.phasergame,
