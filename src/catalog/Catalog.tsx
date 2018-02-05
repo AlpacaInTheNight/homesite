@@ -7,19 +7,21 @@ let Catalog: Elerium.BigPicture.catalogList = {
 		english: `
 		
 			<p class="about">
-				I am frontend developer with over five years of experience in web development.
-				Two of them in outsourcing company where I worked with USA based team creating web solutions for E-Commerce projects.
-				I am fluent English speaker, experienced in working inside groups and familiar with working process from planning to testing/supporting.
-				I'm looking forward to work on interesting and challenging projects and always open to learning new technologies.
+			I am frontend developer with over five years of experience in web development.
+			Three of them in outsourcing companies where I worked with USA and EU based teams,
+			creating web solutions for E-Commerce projects.
+			I am fluent English speaker, experienced in working in group and familiar with working process
+			from planning to testing/supporting. I'm looking forward to work on interesting and challenging
+			projects and always open to learning new technologies.
 			</p>
 		`,
 		russian: `
 		
 			<p class="about">
 				Я frontend developer с пятилетним опытом.
-				Около двух лет я работал в сфере аутсорсинга создавая и поддерживая проекты для E-Commerce.
-				У меня богатый опыт работы в группе и разработке от проектирования до тестирования и поддержки.
-				Я открыт к изучению новых технологий и мечтаю работать на интересных проектах, где можно лично расти.
+				Три года из них проработал в сфере аутсорсинга создавая и поддерживая проекты для E-Commerce.
+				У меня богатый опыт работы в команде и разработке от проектирования до тестирования и поддержки.
+				Я открыт к изучению новых технологий и хочу работать на интересных проектах, где можно профессионально расти.
 			</p>
 
 		`,
@@ -41,6 +43,7 @@ let Catalog: Elerium.BigPicture.catalogList = {
 		nameRus: "Динамическая карта",
 		english: "Desktop, Javascript, Canvas, Pixi.js",
 		russian: "Desktop, Javascript, Canvas, Pixi.js",
+		details: "piximap",
 		image: "pm.jpg",
 		open: "http://elerium.org/map/"
 	},
@@ -49,6 +52,7 @@ let Catalog: Elerium.BigPicture.catalogList = {
 		name: "Animation Demo",
 		english: "Web animation.<br /> Desktop/Mobile, Javascript, Canvas, Pixi.js",
 		russian: "Программная анимация.<br /> Desktop/Mobile, Javascript, Canvas, Pixi.js",
+		details: "skydemo",
 		image: "sd.jpg",
 		open: "http://elerium.org/sky3/"
 	},
@@ -99,12 +103,11 @@ let Catalog: Elerium.BigPicture.catalogList = {
 		english: `
 
 			<ul>
-				<li>Javascript (es6)</li>
-				<li>html5/css3</li>
-				<li>Less/Sass</li>
-				<li>Typescript</li>
-				<li>Demandware script</li>
-				<li>C# (basic)</li>
+				<li>html5 (crossbrowser, adaptive, mobile)</li>
+				<li>javascript (es6+), typescript (pref)</li>
+				<li>demandwareScript</li>
+				<li>less/sass, css animations</li>
+				<li>html5 mobile apps (cordova)</li>
 			</ul>
 
 		`,
@@ -116,12 +119,11 @@ let Catalog: Elerium.BigPicture.catalogList = {
 		english: `
 
 			<ul>
-				<li>React</li>
-				<li>Angular.js</li>
-				<li>Angular 2</li>
-				<li>Phaser.io</li>
-				<li>Pixi.js</li>
-				<li>Unity</li>
+				<li>React/Redux (main, pref)</li>
+				<li>Angular.js (secondary) </li>
+				<li>Angular 2+ (secondary)</li>
+				<li>Phaser.io (as hobby)</li>
+				<li>Pixi.js (as hobby)</li>
 				<li>Cordova/Mobile</li>
 			</ul>
 
@@ -137,7 +139,9 @@ let Catalog: Elerium.BigPicture.catalogList = {
 				<li>Scrum/Agile</li>
 				<li>Gulp/Grunt</li>
 				<li>Webpack</li>
-				<li>Unit Testing</li>
+				<li>Unit Testing (Jest)</li>
+				<li>Git/SVN</li>
+				<li>Docs</li>
 			</ul>
 
 		`,
@@ -152,7 +156,7 @@ let Catalog: Elerium.BigPicture.catalogList = {
 				<li>Photoshop</li>
 				<li>Blender</li>
 				<li>Web Design</li>
-				<li>Basic pixelart</li>
+				<li>Basic 3d modeling</li>
 			</ul>
 
 		`,

@@ -21,7 +21,7 @@ export class BigPicture extends React.Component<BigPictureProps, BigPictureState
 	private SCROLLING_CONTAINER_QUERY: string = "body";
 
 	public constructor(props: BigPictureProps) {
-		super();
+		super(props);
 
 		this.DOCUMENT_BODY = document.body;
 

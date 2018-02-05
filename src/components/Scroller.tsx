@@ -20,7 +20,7 @@ export class Scroller extends React.Component<ScrollerProps, ScrollerState> {
 	private isRoot: boolean = false;
 
 	public constructor(props: ScrollerProps) {
-		super();
+		super(props);
 
 		this.state = {
 			showButton: false

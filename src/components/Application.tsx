@@ -21,7 +21,7 @@ export class Application extends React.Component<ApplicationProps, ApplicationSt
 	private readonly USER_LANGUAGE = "userLanguage";
 
 	public constructor(props: ApplicationProps) {
-		super();
+		super(props);
 		let lang: Elerium.availableLanguages = localStorage[this.USER_LANGUAGE] ? localStorage[this.USER_LANGUAGE] : "eng";
 
 

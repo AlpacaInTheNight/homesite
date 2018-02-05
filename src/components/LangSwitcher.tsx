@@ -12,7 +12,7 @@ interface LangSwitcherState {
 export class LangSwitcher extends React.Component<LangSwitcherProps, LangSwitcherState> {
 
 	public constructor(props: LangSwitcherProps) {
-		super();
+		super(props);
 
 		console.log("Creating instance of LangSwitcher");
 	}

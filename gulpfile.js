@@ -2,7 +2,6 @@ var gulp			= require('gulp');
 //var ts				= require('gulp-typescript');
 var sourcemaps		= require('gulp-sourcemaps');
 var uglify			= require('gulp-uglify');
-//var babel			= require('gulp-babel');
 var plumber			= require('gulp-plumber');
 var less			= require('gulp-less');
 var cleanCSS		= require('gulp-clean-css');
@@ -43,10 +42,6 @@ gulp.task('scripts', function () {
 		"suppressImplicitAnyIndexErrors": true,
 		"strictNullChecks": true
 	})
-	/*.transform('babelify', { //not sure what that is for. additional polyfilling?
-		presets: ['es2015'],
-		extensions: ['.ts']
-	})*/
 	.bundle().on('error', function(error) {
 		console.log("----------------------------------------");
 		console.log(error.message);

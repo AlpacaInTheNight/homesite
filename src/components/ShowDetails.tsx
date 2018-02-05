@@ -26,7 +26,7 @@ export class ShowDetails extends React.Component<ShowDetailsProps, ShowDetailsSt
 	private RUSSIAN: Elerium.availableLanguages = "rus";
 
 	public constructor(props: ShowDetailsProps) {
-		super();
+		super(props);
 
 		this.state = {
 			loading: "loading"
@@ -141,7 +141,7 @@ export class ShowDetails extends React.Component<ShowDetailsProps, ShowDetailsSt
 		}
 		
 		return (
-			<div className="bigpicture_details_wrapper">
+			<div className={"bigpicture_details_wrapper " + this.props.language}>
 
 				<div className="bigpicture_details_menu">
 					<div className="title">{title}</div>
